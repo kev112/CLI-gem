@@ -1,3 +1,3 @@
-catpedia = Catpedia::cli.new
+catpedia_cli = Catpedia::cli.new
 
-catpedia.start
+catpedia_cli.start
