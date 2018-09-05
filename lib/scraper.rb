@@ -1,17 +1,15 @@
-class Scraper 
+class Scraper  
 
-attr_accessor 
+    def scrape_cats(url)
+        html = open(url)
+        Nokogiri::HTML(html).css()
+        #return hash of cats
+    end
 
-def initialize
-
-end
-
-def scrape_cats(url)
-
-end
-
-def scrape_cat_details(url)
-
-end
+    def scrape_cat_details(url)
+        html = open(url)
+        Nokogiri::HTML(html).css()
+        #return hash 
+    end
 
 end
