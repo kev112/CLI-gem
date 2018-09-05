@@ -5,9 +5,12 @@ This ruby gem CLI is a CLI application that scrapes a website and displays a lis
 
 
 Installation
-===
+---
 
 gem install catpedia
 
 Usage
-===
+---
+
+Contribution
+---
