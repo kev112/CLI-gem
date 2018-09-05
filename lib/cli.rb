@@ -1,4 +1,8 @@
 class CLI
+    def start
+        
+    end
+
     def list_cats(url)
 
     end
