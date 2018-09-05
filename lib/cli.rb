@@ -10,8 +10,8 @@ class CLI
 
     def list_cats(url)
         puts 'Here are various cat breeds:'
-        Cat.all.each do |cat| 
-            puts '#{}'
+        Cat.all.each.with_index do |index, cat| 
+            puts "#{index + 1}. #{cat.name}"
         end
         puts 'Which breed do you want to learn more about?'
     end
