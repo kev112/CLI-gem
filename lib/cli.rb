@@ -18,7 +18,7 @@ class CLI
         end
     end
 
-    def list_cats(url)
+    def list_cats
         puts 'Here are various cat breeds:'
         Cat.all.each.with_index do |index, cat| 
             puts "#{index + 1}. #{cat.name}"
