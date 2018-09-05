@@ -1,3 +1,5 @@
 catpedia_cli = Catpedia::cli.new
 
-catpedia_cli.start
+URL = 'aaa.com'
+
+catpedia_cli.start(URL)
