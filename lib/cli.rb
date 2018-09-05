@@ -1,10 +1,19 @@
 class CLI
+    def initialize
+        
+    end
+
     def start
+        list_cats(url here)
         
     end
 
     def list_cats(url)
-
+        puts 'Here are various cat breeds:'
+        Cat.all.each do |cat| 
+            puts '#{}'
+        end
+        puts 'Which breed do you want to learn more about?'
     end
 
     def get_input 
