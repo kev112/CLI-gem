@@ -8,6 +8,7 @@ class CLI
         case input
         when 'exit'
             puts 'Exiting...Bye!'
+            exit
         end
     end
 
