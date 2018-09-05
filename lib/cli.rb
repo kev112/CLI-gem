@@ -3,10 +3,19 @@ class CLI
         
     end
 
-    def start
-        Cat.new(Scraper.scrape_cats(url here))
-        list_cats(url here)
+    def start(url)
+        create_cats(Scraper.scrape_cats(url))
+        list_cats(url)
         
+    end
+
+    def create_cats(scraped_cats)
+        scraped_cats = Scraper.scrape_cats #hash of cats and urls 
+        scraped_cats.each do |cat|
+            url = cat[:url]  #the URL for a cat's details page
+            cat_details = Scraper.scrape_cat_details(url)
+            Cat.new(cat_details)
+        end
     end
 
     def list_cats(url)
