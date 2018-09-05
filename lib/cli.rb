@@ -1,3 +1,21 @@
+class CLI
+    def list_cats
+
+    end
+
+    def get_input 
+    
+    end
+
+    def show_cat
+
+    end
+
+    def quit
+        
+    end
+end
+
 Here are various cat breeds:
 1
 2
