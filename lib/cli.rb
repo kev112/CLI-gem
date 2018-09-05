@@ -4,6 +4,7 @@ class CLI
     end
 
     def start
+        Cat.new(Scraper.scrape_cats(url here))
         list_cats(url here)
         
     end

@@ -4,8 +4,8 @@ attr_accessor
 
 @@all = []
 
-def initialize
-
+def initialize(cat_details)
+    @@all << self
 end
 
 end
